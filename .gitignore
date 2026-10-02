@@ -8,3 +8,16 @@ Pictures_registration
 
 # database dump
 library.sql
+
+# local test credentials
+test_config.py
+
+# Python virtual environment
+.venv/
+
+# local Selenium test image
+test-book.jpg
+
+# Python cache
+__pycache__/
+*.pyc
