@@ -2,7 +2,7 @@
 
 This is an older version of a PHP/MySQL library application that I originally developed myself and later revisited as a QA project.
 
-I tested the existing functionality, identified and fixed several issues, and created automated Selenium tests for important user and admin workflows.
+I tested the existing functionality, identified and fixed several issues, and created automated Selenium and Playwright tests for important user and admin workflows.
 
 The main focus was on practical QA work — creating test cases, reproducing and documenting bugs, verifying fixes and automating repeatable tests.
 
@@ -13,6 +13,7 @@ The project includes:
 * Manual test cases
 * Bug reports
 * Selenium automated tests
+* Playwright automated tests
 * End-to-end testing of user and admin workflows
 
 ## Manual Testing
@@ -48,6 +49,10 @@ See:
 
 ## Automated Testing
 
+The project includes automated UI tests using both Selenium and Playwright.
+
+### Selenium
+
 Selenium tests cover:
 
 * Valid login
@@ -60,7 +65,18 @@ Tests are located in:
 
 `tests/selenium/`
 
-The tests were written in Python using Selenium WebDriver.
+### Playwright
+
+Playwright tests cover:
+
+* Valid login
+* Book search
+
+Tests are located in:
+
+`tests/playwright/`
+
+The automated tests were written in Python using Selenium WebDriver and Playwright.
 
 ## Technologies
 
@@ -69,6 +85,7 @@ The tests were written in Python using Selenium WebDriver.
 * HTML / CSS
 * Python
 * Selenium
+* Playwright
 * Git / GitHub
 * XAMPP
 
